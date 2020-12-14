@@ -1,0 +1,54 @@
+@import 'colors';
+
+#message-pane {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    background: #fff;
+    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+
+    #header-name {
+      p {
+        small {
+          font-size: 11px;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    #close-button {
+      transform: scale(.75);
+      margin-left: auto;
+    }
+  }
+
+  .messages {
+    background: $blue_dark;
+    flex-grow: 1;
+    overflow-y: auto;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .input {
+    background: #fff;
+
+    input {
+      border-radius: 0;
+      box-sizing: border-box;
+      height: 32px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
